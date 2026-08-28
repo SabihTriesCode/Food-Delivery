@@ -13,7 +13,7 @@ const StoreContextProvider = (props) => {
 
   const url = "http://localhost:4000";
 
-  // ==================== FUNCTIONS ====================
+ 
 
   const addToCart = async (itemId) => {
     if (!cartItems[itemId]) {
@@ -76,9 +76,7 @@ const StoreContextProvider = (props) => {
   setCartItems(response.data.cartData || {});
 };
 
-  // ==================== EFFECTS ====================
-
-  // ==================== EFFECTS ====================
+  
 
 useEffect(() => {
   if (token) {
@@ -101,7 +99,7 @@ useEffect(() => {
   loadData();
 }, [token]);
 
-  // ==================== CONTEXT VALUE ====================
+  
 
   const contextValue = {
     food_list,
